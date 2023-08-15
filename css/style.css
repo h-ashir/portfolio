@@ -52,7 +52,7 @@ h2{
     font-size: 2rem;
 }
 .hero h1{
-    font-size: 7rem;
+    font-size: 9rem;
 }
 .hero h3{
     font-size: 2rem;
@@ -114,23 +114,23 @@ img{
 }
 .education-year{
     font-family: 'Raleway', sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 .education-level{
     font-family: 'Mulish', sans-serif;
     font-weight:bolder;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
 }
 .education-institution{
     font-family: 'Mulish', sans-serif;
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
 }
 #edu{
     margin-top: 30px;
     display: flex;
     /* gap: 20px; */
-    background-color: rgba(8, 84, 247, 0.637);
+    background-color: rgba(8, 104, 247, 0.918);
     border-radius: 10px;
     padding: 20px;
     margin-bottom: 40px;
@@ -155,15 +155,15 @@ img{
 }
 
 .fa-school{
-    color: rgb(2, 39, 160);
+    color: rgb(0, 8, 122);
     font-size: 2.1rem;
 }
 .fa-university{
-    color: rgb(2, 39, 160);
+    color: rgb(0, 8, 122);
     font-size: 2.5rem;
 }
 .fa-graduation-cap{
-    color: rgb(2, 39, 160);
+    color: rgb(0, 8, 122);
     font-size: 2.5rem;
 }
 
@@ -202,7 +202,7 @@ img{
     display: flex;
     /* flex-direction: column; */
     justify-content: center;
-    padding: 20px;
+    padding: 40px;
     width: 35vw;
     height: 35vh;
     background-color: rgba(28, 32, 250, 0.452);
@@ -259,10 +259,10 @@ img{
     justify-content: center;
 }
 .proj-img{
-    width: 24vw;
+    width: 25vw;
     /* width: 300px; */
     border: 5px solid black;
-    height: 250px;
+    height: 300px;
 }
 .project-name{
     padding-left: 90px;
@@ -275,7 +275,7 @@ img{
     height: 85vh;
     /* padding-top: 100px; */
     margin-left: 70px;
-    height: 110vh;
+    height: 100vh;
 }
 .contact-tab{
     /* background-color: #5fbbfd; */
