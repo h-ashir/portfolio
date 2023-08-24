@@ -311,7 +311,8 @@ a{
         padding-left: 15px;
     }
     #home{
-        margin-left: 40px;
+        margin-left: 75px;
+        /* padding-left: ; */
     }
     .navbar-list {
         display: none;
@@ -349,6 +350,7 @@ a{
     .about{
         display: grid;
         grid-template-rows: 0.5fr 0.7fr 2fr;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 0px;
     }
     .about h1{
@@ -360,14 +362,16 @@ a{
         height: 200px;
         width: 200px;
         grid-row: 2;
+        margin-left: 70px;
         margin-top: 0;
         margin-bottom: 0px;
     }
     .about p{
         grid-row: 3;
         min-width: 60vw;
+        text-align: left;
     }
-    #skills{
+    .skills{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -406,13 +410,15 @@ a{
     .project{
         display: flex;
         flex-direction: column;
-        align-items: center;
+        /* align-items: center; */
+        /* justify-content: center; */
     }
     .project-title h1{
         font-size: 4.2rem;
     }
     .project-name h3{
         font-size: 2.2rem;
+        margin-left: 55px;
     }
     .project-tab{
         display: flex;
@@ -420,8 +426,11 @@ a{
         justify-content: center;
     }
     .proj-img{
-        min-width: 65vw;
+        width: 85vw;
         height: 60vh;
-        margin-left: 40px;
+        margin-left: 0px;
     }
+.contact{
+    margin: 0;
+}
 }
