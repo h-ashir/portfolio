@@ -174,7 +174,7 @@ h2{
     font-size: 2.5rem;
 }
 
-#skills{
+#Skills{
     padding: 70px;
     padding-top: 160px;
     margin-left: 70px;
@@ -183,17 +183,14 @@ h2{
 .skill-title{
     display: flex;
     justify-content: center;
-    margin-top: 150px;
-}
-.skill-title h1{
     font-size: 4.5rem;
-
+    margin-top: 150px;
 }
 .skill-description{
     width: 100%;
     display: flex;
     gap: 30px;
-    justify-content:space-evenly;
+    justify-content:center;
     margin-top: 25px;
     gap: 200px;
     padding: 50px;
@@ -304,11 +301,7 @@ a{
 
 @media(max-width: 768px){
     #Container{
-       padding-left: 30px;
        width: 100%;
-    }
-    main{
-        padding-left: 15px;
     }
     #home{
         margin-left: 75px;
@@ -341,6 +334,9 @@ a{
     #menu-toggle:checked ~ .nav-list {
         display: block; /* Show the menu list when checkbox is checked */
     }
+    #home{
+        margin-left: 30px;
+    }
     .hero h1{
         font-size: 5.5rem;
     }
@@ -353,8 +349,11 @@ a{
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 0px;
     }
+    .about:nth-child(1){
+        margin-left: 80px;
+    }
     .about h1{
-        text-align: center;
+        text-align: center; 
         margin-left: 0;
         grid-row: 1;
     }
@@ -362,16 +361,25 @@ a{
         height: 200px;
         width: 200px;
         grid-row: 2;
-        margin-left: 70px;
+        margin-left: 180px;
         margin-top: 0;
         margin-bottom: 0px;
     }
     .about p{
         grid-row: 3;
-        min-width: 60vw;
+        min-width: 80vw;
         text-align: left;
     }
+    #Skills{
+        margin: 0;
+    }
     .skills{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
+    .skilldiv{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -386,51 +394,51 @@ a{
     .skill-description{
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
         gap: 50px;
     }
-    .education{
-        display: flex;
-        align-items: center;
+    .skill-name h3{
+        font-size: 2.2rem;
     }
+    .skills-tab{
+        display: flex;
+        align-self: center;
+        width: 45vw;
+        height: 30vw;
+    } 
     #edu{
         min-width: 65vw;
     }
     .education-details{
         display: flex;
         flex-direction: column;
-        align-items: center;
+        margin-left: 0;
+        padding-left: 0;
     }
-    .skill-name h3{
-        font-size: 2.2rem;
-    }
-    .skills-tab{
-         width: 45vw;
-    } 
     .project{
         display: flex;
         flex-direction: column;
-        /* align-items: center; */
-        /* justify-content: center; */
     }
     .project-title h1{
         font-size: 4.2rem;
     }
     .project-name h3{
         font-size: 2.2rem;
-        margin-left: 55px;
+        margin-left: px;
     }
     .project-tab{
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        align-items: center;
     }
     .proj-img{
-        width: 85vw;
+        width: 70vw;
         height: 60vh;
         margin-left: 0px;
     }
-.contact{
-    margin: 0;
-}
+    .contact{
+        margin: 0;
+    }
+    .contact-title h1{
+        font-size: 4.3rem;
+    }
 }
