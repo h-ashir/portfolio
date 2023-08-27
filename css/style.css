@@ -4,12 +4,12 @@
     box-sizing: border-box;
 }
 #Container{
-    background-color: #EEE0C9;
+    background-color: #f7eddd;
     width: 100%;
 }
 .nav{
     width: 100%;
-    background-color: #EEE0C9;
+    background-color: #f7eddd;
     /* position: fixed; */
     padding: 25px;
     height: 12vh;
@@ -52,7 +52,9 @@ a{
   }
 
 #home{
+    /* position: relative; */
     display: flex;
+    /* width: 300px; */
     justify-content: center;
     text-align: center;
     padding: 220px;
@@ -200,7 +202,7 @@ h2{
     justify-content: space-evenly;
     padding: 40px;
     min-width: 20vw;
-    height: 35vh;
+    height: 40vh;
     background-color: #ADC4CE;
     border: 10px solid rgb(150, 182, 197);
     border-radius: 15px;
@@ -222,7 +224,7 @@ h2{
     font-size: 3rem;
 }
 
-#project{
+#Project{
     padding: 70px;
     margin-top: 180px;
     padding-top: 100px;
@@ -303,10 +305,6 @@ a{
     #Container{
        width: 100%;
     }
-    #home{
-        margin-left: 75px;
-        /* padding-left: ; */
-    }
     .navbar-list {
         display: none;
         flex-direction: column;
@@ -316,10 +314,13 @@ a{
         right: 0;
         width: 100%;
         padding: 10px;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        transform: translateX(-200%); /* Start offscreen */
+        transition: transform 0.3s ease-in-out;
+        box-shadow: -20px -17px 15px rgba(0, 0, 0, 0.2);
     }
     #menu-toggle:checked ~ .navbar-list {
         display: flex;
+         
     }
     .menu-icon {
         display: block;
@@ -333,9 +334,11 @@ a{
     }
     #menu-toggle:checked ~ .nav-list {
         display: block; /* Show the menu list when checkbox is checked */
+        transform: translateX(0);  
     }
     #home{
-        margin-left: 30px;
+        display: flex;
+        width: 750px;
     }
     .hero h1{
         font-size: 5.5rem;
@@ -350,34 +353,43 @@ a{
         grid-gap: 0px;
     }
     .about:nth-child(1){
-        margin-left: 80px;
+        margin-left: 0;
     }
     .about h1{
         text-align: center; 
         margin-left: 0;
         grid-row: 1;
+        width: 720px;
     }
     .about img{
+        position: relative;
+        left: 9rem;
         height: 200px;
         width: 200px;
         grid-row: 2;
-        margin-left: 180px;
         margin-top: 0;
         margin-bottom: 0px;
     }
     .about p{
         grid-row: 3;
-        min-width: 80vw;
+        /* min-width: 80vw; */
+        width: 630px;
         text-align: left;
+        margin-left: 60px;
     }
     #Skills{
         margin: 0;
+        margin-left: 0px;
+        padding-left: 0;
+        padding-top: 40px;
+        width: 765px;
     }
     .skills{
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-left: 0;
+        margin-left: 0px;
+        min-width: 740px;
     }
     .skilldiv{
         display: flex;
@@ -389,30 +401,54 @@ a{
         justify-content: center;
     }
     .skill-title h1{
+        position: relative;
         font-size: 4.2rem;
+        width: 155px;
     }
     .skill-description{
         display: flex;
         flex-direction: column;
-        gap: 50px;
+        gap: 100px;
+        width: 500px;
+        margin-top: 0;
     }
     .skill-name h3{
-        font-size: 2.2rem;
+        font-size: 1.8rem;
     }
     .skills-tab{
         display: flex;
         align-self: center;
-        width: 45vw;
-        height: 30vw;
+        width: 46vw;
+        height: 40vw;
     } 
-    #edu{
-        min-width: 65vw;
+    .skilldiv{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .skill-icon .fab{
+        font-size: 4rem;
+    }
+    .education{
+        margin-left: 0;
+        padding-top: 0px;
+        padding-right: 0;
     }
     .education-details{
         display: flex;
         flex-direction: column;
-        margin-left: 0;
+        margin-left: 10px;
         padding-left: 0;
+        min-width: 550px;
+    }
+    .education-details h1{
+        position: relative;
+        left: 110px;
+    }
+    #Project{
+        display: flex;
+        flex-direction: column;
+        width: 740px;
     }
     .project{
         display: flex;
@@ -423,22 +459,30 @@ a{
     }
     .project-name h3{
         font-size: 2.2rem;
-        margin-left: px;
     }
     .project-tab{
+        min-width: 300px;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
     .proj-img{
-        width: 70vw;
+        min-width: 65vw;
         height: 60vh;
         margin-left: 0px;
     }
     .contact{
         margin: 0;
+        margin-bottom: 100px;
+    }
+    .contact-title{
+        margin-bottom: 0;
     }
     .contact-title h1{
         font-size: 4.3rem;
+    }
+    .contact-tab{
+        display: grid;
+        grid-gap: 0;
     }
 }
